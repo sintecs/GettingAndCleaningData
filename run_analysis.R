@@ -2,10 +2,6 @@
 ## This will take the URL provided in the assignment and download the zip file.
 ## It then loads and merges the two datasets, Train and Test into one dataset
 
-##install.packages("dplyr")
-##library(plyr)
-##library(dplyr)
-
 ## URL of the dataset
 sourceDataURL <- 'https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip'
 
