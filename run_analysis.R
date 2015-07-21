@@ -80,3 +80,8 @@ grouping              <- list(
                              )
 tidy.full             <- aggregate(subjects.full[, 3:68], grouping, mean, na.rm = TRUE)
 
+## Give tidy column names
+for (i in 3:68)
+{
+   colnames(tidy.full)[i] <- paste("Average by Subject and Activity ", colnames(tidy.full)[i])
+}
