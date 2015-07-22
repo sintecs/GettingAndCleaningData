@@ -41,6 +41,10 @@ colnames(activities)  <- c('ActivityID', 'Activity')
 
 ## Loop through columns in features and keep only the columns we want
 ## Rename columns based on features.txt column names
+
+##Use non loops!!!!
+grep('mean\\(\\)', colnames(subjects.x), ignore.case = TRUE)
+
 x <- 1
 y <- 1
 trim.subjects.x <- data.frame(rep(NA, length(subjects.x[, 1])))
