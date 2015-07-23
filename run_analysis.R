@@ -39,27 +39,16 @@ colnames(subjects.y)  <- 'ActivityID'
 colnames(subjects.x)  <- features[, 2]
 colnames(activities)  <- c('ActivityID', 'Activity')
 
-## Loop through columns in features and keep only the columns we want
-## Rename columns based on features.txt column names
+## Get the columns with mean() or std() in their name and make one vector of them
+mean.cols             <- grep('mean\\(\\)', colnames(subjects.x), ignore.case = TRUE)
+std.cols              <- grep('Std\\(\\)', colnames(subjects.x), ignore.case = TRUE)
+mean.std.cols         <- c(mean.cols, std.cols)
 
-##Use non loops!!!!
-grep('mean\\(\\)', colnames(subjects.x), ignore.case = TRUE)
+## Subset the data with the mean.std.cols vector
+trim.subjects.x   <- subjects.x[, mean.std.cols]
 
-x <- 1
-y <- 1
-trim.subjects.x <- data.frame(rep(NA, length(subjects.x[, 1])))
-for (i in features[, 2])
-{
-   if (   length(grep('mean\\(\\)', i, ignore.case = TRUE) > 0) 
-       || length(grep('std\\(\\)', i, ignore.case = TRUE) > 0)
-      )
-   {
-       trim.subjects.x[y] <- subjects.x[, x]
-       colnames(trim.subjects.x)[y] <- colnames(subjects.x)[x]
-       y <- y + 1
-   }
-   x <- x + 1
-}
+## Name columns based on their column names from subjects.x
+colnames(trim.subjects.x) <- colnames(subjects.x)[mean.std.cols]
 
 ## Merge subjects.y and activities by ActivityID, make sure to not sort the data
 ## or we will have the wrong activities with the wrong subjects!!!  
@@ -78,10 +67,11 @@ grouping              <- list(
                                Subject = subjects.full$Subject
                               ,Activity = subjects.full$Activity
                              )
-tidy.full             <- aggregate(subjects.full[, 3:68], grouping, mean, na.rm = TRUE)
+column.count          <- length(colnames(subjects.full))
+tidy.full             <- aggregate(subjects.full[, 3:column.count], grouping, mean, na.rm = TRUE)
 
 ## Give tidy column names
-for (i in 3:68)
-{
-   colnames(tidy.full)[i] <- paste("Average by Subject and Activity ", colnames(tidy.full)[i])
-}
+old.column.names      <- colnames(tidy.full)[3:length(colnames(tidy.full))]
+prefix.name           <- 'Average by Subject and Activity'
+new.column.names      <- paste(rep(prefix.name, length(old.column.names)), old.column.names)
+colnames(tidy.full)[3:column.count] <- new.column.names
