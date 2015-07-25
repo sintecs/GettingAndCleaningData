@@ -13,76 +13,78 @@ The study for the Coursera Project performed the following:
 4. Appropriately labels the data set with descriptive variable names. 
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
+### NOTE:
+The steps in the assignment noted to extract only the mean and standard deviation from the data set measurements.  For this author that meant only measures that contained the text mean() and std() were included.  All other means and std columns were derivative columns on the mean() and std() columns mentioned and as such were not included in the tidy set
+
 ## Code Book
 
-
-Variable Name | Variable Description | Variable Units
------------------------------------------
-"Subject" |  | 
-"Activity" |  | 
-"Average by Subject and Activity tBodyAcc-mean()-X" |  | 
-"Average by Subject and Activity tBodyAcc-mean()-Y" |  | 
-"Average by Subject and Activity tBodyAcc-mean()-Z" |  | 
-"Average by Subject and Activity tGravityAcc-mean()-X" |  | 
-"Average by Subject and Activity tGravityAcc-mean()-Y" |  | 
-"Average by Subject and Activity tGravityAcc-mean()-Z" |  | 
-"Average by Subject and Activity tBodyAccJerk-mean()-X" |  | 
-"Average by Subject and Activity tBodyAccJerk-mean()-Y" |  | 
-"Average by Subject and Activity tBodyAccJerk-mean()-Z" |  | 
-"Average by Subject and Activity tBodyGyro-mean()-X" |  | 
-"Average by Subject and Activity tBodyGyro-mean()-Y" |  | 
-"Average by Subject and Activity tBodyGyro-mean()-Z" |  | 
-"Average by Subject and Activity tBodyGyroJerk-mean()-X" |  | 
-"Average by Subject and Activity tBodyGyroJerk-mean()-Y" |  | 
-"Average by Subject and Activity tBodyGyroJerk-mean()-Z" |  | 
-"Average by Subject and Activity tBodyAccMag-mean()" |  | 
-"Average by Subject and Activity tGravityAccMag-mean()" |  | 
-"Average by Subject and Activity tBodyAccJerkMag-mean()" |  | 
-"Average by Subject and Activity tBodyGyroMag-mean()" |  | 
-"Average by Subject and Activity tBodyGyroJerkMag-mean()" |  | 
-"Average by Subject and Activity fBodyAcc-mean()-X" |  | 
-"Average by Subject and Activity fBodyAcc-mean()-Y" |  | 
-"Average by Subject and Activity fBodyAcc-mean()-Z" |  | 
-"Average by Subject and Activity fBodyAccJerk-mean()-X" |  | 
-"Average by Subject and Activity fBodyAccJerk-mean()-Y" |  | 
-"Average by Subject and Activity fBodyAccJerk-mean()-Z" |  | 
-"Average by Subject and Activity fBodyGyro-mean()-X" |  | 
-"Average by Subject and Activity fBodyGyro-mean()-Y" |  | 
-"Average by Subject and Activity fBodyGyro-mean()-Z" |  | 
-"Average by Subject and Activity fBodyAccMag-mean()" |  | 
-"Average by Subject and Activity fBodyBodyAccJerkMag-mean()" |  | 
-"Average by Subject and Activity fBodyBodyGyroMag-mean()" |  | 
-"Average by Subject and Activity fBodyBodyGyroJerkMag-mean()" |  | 
-"Average by Subject and Activity tBodyAcc-std()-X" |  | 
-"Average by Subject and Activity tBodyAcc-std()-Y" |  | 
-"Average by Subject and Activity tBodyAcc-std()-Z" |  | 
-"Average by Subject and Activity tGravityAcc-std()-X" |  | 
-"Average by Subject and Activity tGravityAcc-std()-Y" |  | 
-"Average by Subject and Activity tGravityAcc-std()-Z" |  | 
-"Average by Subject and Activity tBodyAccJerk-std()-X" |  | 
-"Average by Subject and Activity tBodyAccJerk-std()-Y" |  | 
-"Average by Subject and Activity tBodyAccJerk-std()-Z" |  | 
-"Average by Subject and Activity tBodyGyro-std()-X" |  | 
-"Average by Subject and Activity tBodyGyro-std()-Y" |  | 
-"Average by Subject and Activity tBodyGyro-std()-Z" |  | 
-"Average by Subject and Activity tBodyGyroJerk-std()-X" |  | 
-"Average by Subject and Activity tBodyGyroJerk-std()-Y" |  | 
-"Average by Subject and Activity tBodyGyroJerk-std()-Z" |  | 
-"Average by Subject and Activity tBodyAccMag-std()" |  | 
-"Average by Subject and Activity tGravityAccMag-std()" |  | 
-"Average by Subject and Activity tBodyAccJerkMag-std()" |  | 
-"Average by Subject and Activity tBodyGyroMag-std()" |  | 
-"Average by Subject and Activity tBodyGyroJerkMag-std()" |  | 
-"Average by Subject and Activity fBodyAcc-std()-X" |  | 
-"Average by Subject and Activity fBodyAcc-std()-Y" |  | 
-"Average by Subject and Activity fBodyAcc-std()-Z" |  | 
-"Average by Subject and Activity fBodyAccJerk-std()-X" |  | 
-"Average by Subject and Activity fBodyAccJerk-std()-Y" |  | 
-"Average by Subject and Activity fBodyAccJerk-std()-Z" |  | 
-"Average by Subject and Activity fBodyGyro-std()-X" |  | 
-"Average by Subject and Activity fBodyGyro-std()-Y" |  | 
-"Average by Subject and Activity fBodyGyro-std()-Z" |  | 
-"Average by Subject and Activity fBodyAccMag-std()" |  | 
-"Average by Subject and Activity fBodyBodyAccJerkMag-std()" |  | 
-"Average by Subject and Activity fBodyBodyGyroMag-std()" |  | 
-"Average by Subject and Activity fBodyBodyGyroJerkMag-std()" |  | 
+Variable Name | Variable Description | Variable Units 
+------------- | -------------------- | -------------
+"Subject" | The number of the person in the studay | person(s) valued 1 to 30
+"Activity" | The name of the task being performed for this measurement  | name of task Walking, Walking_Upstairs, Walking_Downstairs, Sitting, Standing or Laying
+"Average by Subject and Activity tBodyAcc-mean()-X" | The average mean value of the X coordinante of the body measured by the accelerometer of this subject and activity based on time at a constant rate of 50 Hz | The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity tBodyAcc-mean()-Y" | The average mean value of the Y coordinante of the body measured by the accelerometer of this subject and activity based on time at a constant rate of 50 Hz |The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity tBodyAcc-mean()-Z" | The average mean value of the Z coordinante of the body measured by the accelerometer of this subject and activity based on time at a constant rate of 50 Hz |The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity tGravityAcc-mean()-X" | The average mean value of the X coordinante of the gravity measured by the accelerometer of this subject and activity based on time at a constant rate of 50 Hz | The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity tGravityAcc-mean()-Y" | The average mean value of the Y coordinante of the gravity measured by the accelerometer of this subject and activity based on time at a constant rate of 50 Hz | The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity tGravityAcc-mean()-Z" | The average mean value of the Z coordinante of the gravity measured by the accelerometer of this subject and activity based on time at a constant rate of 50 Hz | The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity tBodyAccJerk-mean()-X" | The average mean value of the X coordinante of the body linear accelleration and angular velocity measured by the accelerometer due to jerking of this subject and activity based on time at a constant rate of 50 Hz | The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity tBodyAccJerk-mean()-Y" | The average mean value of the Y coordinante of the body linear accelleration and angular velocity measured by the accelerometer due to jerking of this subject and activity based on time at a constant rate of 50 Hz | The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity tBodyAccJerk-mean()-Z" | The average mean value of the Z coordinante of the body linear accelleration and angular velocity measured by the accelerometer due to jerking of this subject and activity based on time at a constant rate of 50 Hz | The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity tBodyGyro-mean()-X" | The average mean value of the X coordinante of the body measured by the gyroscope of this subject and activity based on time at a constant rate of 50 Hz | The angular velocity vector measured by the gyroscope in radians/second bounded from -1 to 1
+"Average by Subject and Activity tBodyGyro-mean()-Y" | The average mean value of the Y coordinante of the body measured by the gyroscope of this subject and activity based on time at a constant rate of 50 Hz | The angular velocity vector measured by the gyroscope in radians/second bounded from -1 to 1
+"Average by Subject and Activity tBodyGyro-mean()-Z" | The average mean value of the Z coordinante of the body measured by the gyroscope of this subject and activity based on time at a constant rate of 50 Hz | The angular velocity vector measured by the gyroscope in radians/second bounded from -1 to 1
+"Average by Subject and Activity tBodyGyroJerk-mean()-X" | The average mean value of the X coordinante of the body linear accelleration and angular velocity measured by the accelerometer due to jerking of this subject and activity based on time at a constant rate of 50 Hz | The angular velocity vector measured by the gyroscope in radians/second bounded from -1 to 1
+"Average by Subject and Activity tBodyGyroJerk-mean()-Y" | The average mean value of the Y coordinante of the body linear accelleration and angular velocity measured by the accelerometer due to jerking of this subject and activity based on time at a constant rate of 50 Hz | The angular velocity vector measured by the gyroscope in radians/second bounded from -1 to 1
+"Average by Subject and Activity tBodyGyroJerk-mean()-Z" | The average mean value of the Z coordinante of the body linear accelleration and angular velocity measured by the accelerometer due to jerking of this subject and activity based on time at a constant rate of 50 Hz | The angular velocity vector measured by the gyroscope in radians/second bounded from -1 to 1
+"Average by Subject and Activity tBodyAccMag-mean()" | The average mean value of the magnitude of the body measured by the accelerometer of these three-dimensional signals were calculated using the Euclidean norm of this subject and activity based on time at a constant rate of 50 Hz | The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity tGravityAccMag-mean()" | The average mean value of the magnitude of gravity measured by the accelerometer of these three-dimensional signals were calculated using the Euclidean norm of this subject and activity based on time at a constant rate of 50 Hz | The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity tBodyAccJerkMag-mean()" | The average mean value of the magnitude of the body linear accelleration and angular velocity measured by the accelerometer of these three-dimensional signals were calculated using the Euclidean norm of this subject and activity based on time at a constant rate of 50 Hz | The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity tBodyGyroMag-mean()" | The average mean value of the magnitude of the body measured by the gyroscope of these three-dimensional signals were calculated using the Euclidean norm of this subject and activity based on time at a constant rate of 50 Hz | The angular velocity vector measured by the gyroscope in radians/second bounded from -1 to 1
+"Average by Subject and Activity tBodyGyroJerkMag-mean()" | The average mean value of the magnitude of the body linear gyroscope and angular velocity measured by the accelerometer of these three-dimensional signals were calculated using the Euclidean norm of this subject and activity based on time at a constant rate of 50 Hz | The angular velocity vector measured by the gyroscope in radians/second bounded from -1 to 1
+"Average by Subject and Activity fBodyAcc-mean()-X" | The average mean value of the X coordinante of the body after a Fast Fourier Transform is applied as measured by the accelerometer of this subject and activity | The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity fBodyAcc-mean()-Y" | The average mean value of the Y coordinante of the body after a Fast Fourier Transform is applied as measured by the accelerometer of this subject and activity |The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity fBodyAcc-mean()-Z" | The average mean value of the Z coordinante of the body after a Fast Fourier Transform is applied as measured by the accelerometer of this subject and activity |The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity fBodyAccJerk-mean()-X" | The average mean value of the X coordinante of the body linear accelleration and angular velocity after a Fast Fourier Transform is applied as measured by the accelerometer due to jerking of this subject and activity | The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity fBodyAccJerk-mean()-Y" | The average mean value of the Y coordinante of the body linear accelleration and angular velocity after a Fast Fourier Transform is applied as measured by the accelerometer due to jerking of this subject and activity | The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity fBodyAccJerk-mean()-Z" | The average mean value of the Z coordinante of the body linear accelleration and angular velocity after a Fast Fourier Transform is applied as measured by the accelerometer due to jerking of this subject and activity | The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity fBodyGyro-mean()-X" | The average mean value of the X coordinante of the body after a Fast Fourier Transform is applied as measured by the gyroscope of this subject and activity | The angular velocity vector measured by the gyroscope in radians/second bounded from -1 to 1
+"Average by Subject and Activity fBodyGyro-mean()-Y" | The average mean value of the Y coordinante of the body after a Fast Fourier Transform is applied as measured by the gyroscope of this subject and activity | The angular velocity vector measured by the gyroscope in radians/second bounded from -1 to 1
+"Average by Subject and Activity fBodyGyro-mean()-Z" | The average mean value of the Z coordinante of the body after a Fast Fourier Transform is applied as measured by the gyroscope of this subject and activity | The angular velocity vector measured by the gyroscope in radians/second bounded from -1 to 1
+"Average by Subject and Activity fBodyAccMag-mean()" | The average mean value of the magnitude of the body after a Fast Fourier Transform is applied as measured by the accelerometer of these three-dimensional signals were calculated using the Euclidean norm of this subject and activity | The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity fBodyBodyAccJerkMag-mean()" | The average mean value of the magnitude of the body linear accelleration and angular velocity after a Fast Fourier Transform is applied as measured by the accelerometer of these three-dimensional signals were calculated using the Euclidean norm of this subject and activity | The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity fBodyBodyGyroMag-mean()" | The average mean value of the magnitude of the body after a Fast Fourier Transform is applied as measured by the gyroscope of these three-dimensional signals were calculated using the Euclidean norm of this subject and activity | The angular velocity vector measured by the gyroscope in radians/second bounded from -1 to 1
+"Average by Subject and Activity fBodyBodyGyroJerkMag-mean()" | The average mean value of the magnitude of the body linear gyroscope and angular velocity after a Fast Fourier Transform is applied as measured by the accelerometer of these three-dimensional signals were calculated using the Euclidean norm of this subject and activity | The angular velocity vector measured by the gyroscope in radians/second bounded from -1 to 1
+"Average by Subject and Activity tBodyAcc-std()-X" | The average standard deviation value of the X coordinante of the body measured by the accelerometer of this subject and activity based on time at a constant rate of 50 Hz |The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity tBodyAcc-std()-Y" | The average standard deviation value of the Y coordinante of the body measured by the accelerometer of this subject and activity based on time at a constant rate of 50 Hz |The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity tBodyAcc-std()-Z" | The average standard deviation value of the Z coordinante of the body measured by the accelerometer of this subject and activity based on time at a constant rate of 50 Hz |The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity tGravityAcc-std()-X" | The average standard deviation value of the X coordinante of the gravity measured by the accelerometer of this subject and activity based on time at a constant rate of 50 Hz | The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity tGravityAcc-std()-Y" | The average standard deviation value of the Y coordinante of the gravity measured by the accelerometer of this subject and activity based on time at a constant rate of 50 Hz | The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity tGravityAcc-std()-Z" | The average standard deviation value of the Z coordinante of the gravity measured by the accelerometer of this subject and activity based on time at a constant rate of 50 Hz | The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity tBodyAccJerk-std()-X" | The average standard deviation value of the X coordinante of the body linear accelleration and angular velocity measured by the accelerometer due to jerking of this subject and activity based on time at a constant rate of 50 Hz | The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity tBodyAccJerk-std()-Y" | The average standard deviation value of the Y coordinante of the body linear accelleration and angular velocity measured by the accelerometer due to jerking of this subject and activity based on time at a constant rate of 50 Hz | The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity tBodyAccJerk-std()-Z" | The average standard deviation value of the Z coordinante of the body linear accelleration and angular velocity measured by the accelerometer due to jerking of this subject and activity based on time at a constant rate of 50 Hz | The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity tBodyGyro-std()-X" | The average standard deviation value of the X coordinante of the body measured by the gyroscope of this subject and activity based on time at a constant rate of 50 Hz | The angular velocity vector measured by the gyroscope in radians/second bounded from -1 to 1
+"Average by Subject and Activity tBodyGyro-std()-Y" | The average standard deviation value of the Y coordinante of the body measured by the gyroscope of this subject and activity based on time at a constant rate of 50 Hz | The angular velocity vector measured by the gyroscope in radians/second bounded from -1 to 1
+"Average by Subject and Activity tBodyGyro-std()-Z" | The average standard deviation value of the Z coordinante of the body measured by the gyroscope of this subject and activity based on time at a constant rate of 50 Hz | The angular velocity vector measured by the gyroscope in radians/second bounded from -1 to 1
+"Average by Subject and Activity tBodyGyroJerk-std()-X" | The average standard deviation value of the X coordinante of the body linear accelleration and angular velocity measured by the accelerometer due to jerking of this subject and activity based on time at a constant rate of 50 Hz | The angular velocity vector measured by the gyroscope in radians/second bounded from -1 to 1
+"Average by Subject and Activity tBodyGyroJerk-std()-Y" | The average standard deviation value of the Y coordinante of the body linear accelleration and angular velocity measured by the accelerometer due to jerking of this subject and activity based on time at a constant rate of 50 Hz | The angular velocity vector measured by the gyroscope in radians/second bounded from -1 to 1
+"Average by Subject and Activity tBodyGyroJerk-std()-Z" | The average standard deviation value of the Z coordinante of the body linear accelleration and angular velocity measured by the accelerometer due to jerking of this subject and activity based on time at a constant rate of 50 Hz | The angular velocity vector measured by the gyroscope in radians/second bounded from -1 to 1
+"Average by Subject and Activity tBodyAccMag-std()" | The average standard deviation value of the magnitude of the body measured by the accelerometer of these three-dimensional signals were calculated using the Euclidean norm of this subject and activity based on time at a constant rate of 50 Hz | The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity tGravityAccMag-std()" | The average standard deviation value of the magnitude of gravity measured by the accelerometer of these three-dimensional signals were calculated using the Euclidean norm of this subject and activity based on time at a constant rate of 50 Hz | The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity tBodyAccJerkMag-std()" | The average standard deviation value of the magnitude of the body linear accelleration and angular velocity measured by the accelerometer of these three-dimensional signals were calculated using the Euclidean norm of this subject and activity based on time at a constant rate of 50 Hz | The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity tBodyGyroMag-std()" | The average standard deviation value of the magnitude of the body measured by the gyroscope of these three-dimensional signals were calculated using the Euclidean norm of this subject and activity based on time at a constant rate of 50 Hz | The angular velocity vector measured by the gyroscope in radians/second bounded from -1 to 1
+"Average by Subject and Activity tBodyGyroJerkMag-std()" | The average standard deviation value of the magnitude of the body linear gyroscope and angular velocity measured by the accelerometer of these three-dimensional signals were calculated using the Euclidean norm of this subject and activity based on time at a constant rate of 50 Hz | The angular velocity vector measured by the gyroscope in radians/second bounded from -1 to 1
+"Average by Subject and Activity fBodyAcc-std()-X" | The average standard deviation value of the X coordinante of the body after a Fast Fourier Transform is applied as measured by the accelerometer of this subject and activity | The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity fBodyAcc-std()-Y" | The average standard deviation value of the Y coordinante of the body after a Fast Fourier Transform is applied as measured by the accelerometer of this subject and activity | The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity fBodyAcc-std()-Z" | The average standard deviation value of the Z coordinante of the body after a Fast Fourier Transform is applied as measured by the accelerometer of this subject and activity | The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity fBodyAccJerk-std()-X" | The average standard deviation value of the X coordinante of the body linear accelleration and angular velocity after a Fast Fourier Transform is applied as measured by the accelerometer due to jerking of this subject and activity | The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity fBodyAccJerk-std()-Y" | The average standard deviation value of the Y coordinante of the body linear accelleration and angular velocity after a Fast Fourier Transform is applied as measured by the accelerometer due to jerking of this subject and activity | The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity fBodyAccJerk-std()-Z" | The average standard deviation value of the Z coordinante of the body linear accelleration and angular velocity after a Fast Fourier Transform is applied as measured by the accelerometer due to jerking of this subject and activity | The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity fBodyGyro-std()-X" | The average standard deviation value of the X coordinante of the body after a Fast Fourier Transform is applied as measured by the gyroscope of this subject and activity | The angular velocity vector measured by the gyroscope in radians/second bounded from -1 to 1
+"Average by Subject and Activity fBodyGyro-std()-Y" | The average standard deviation value of the Y coordinante of the body after a Fast Fourier Transform is applied as measured by the gyroscope of this subject and activity | The angular velocity vector measured by the gyroscope in radians/second bounded from -1 to 1
+"Average by Subject and Activity fBodyGyro-std()-Z" | The average standard deviation value of the Z coordinante of the body after a Fast Fourier Transform is applied as measured by the gyroscope of this subject and activity | The angular velocity vector measured by the gyroscope in radians/second bounded from -1 to 1
+"Average by Subject and Activity fBodyAccMag-std()" | The average standard deviation value of the magnitude of the body after a Fast Fourier Transform is applied as measured by the accelerometer of these three-dimensional signals were calculated using the Euclidean norm of this subject and activity | The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity fBodyBodyAccJerkMag-std()" | The average standard deviation value of the magnitude of the body linear accelleration and angular velocity after a Fast Fourier Transform is applied as measured by the accelerometer of these three-dimensional signals were calculated using the Euclidean norm of this subject and activity | The acceleration signal from the smartphone accelerometer in standard gravity units 'g' bounded from -1 to 1
+"Average by Subject and Activity fBodyBodyGyroMag-std()" | The average standard deviation value of the magnitude of the body after a Fast Fourier Transform is applied as measured by the gyroscope of these three-dimensional signals were calculated using the Euclidean norm of this subject and activity | The angular velocity vector measured by the gyroscope in radians/second bounded from -1 to 1
+"Average by Subject and Activity fBodyBodyGyroJerkMag-std()" | The average standard deviation value of the magnitude of the body linear gyroscope and angular velocity after a Fast Fourier Transform is applied as measured by the accelerometer of these three-dimensional signals were calculated using the Euclidean norm of this subject and activity | The angular velocity vector measured by the gyroscope in radians/second bounded from -1 to 1
