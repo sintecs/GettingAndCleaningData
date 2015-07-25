@@ -75,3 +75,5 @@ old.column.names      <- colnames(tidy.full)[3:length(colnames(tidy.full))]
 prefix.name           <- 'Average by Subject and Activity'
 new.column.names      <- paste(rep(prefix.name, length(old.column.names)), old.column.names)
 colnames(tidy.full)[3:column.count] <- new.column.names
+
+write.table(tidy.full, 'tidydata.txt', row.name = FALSE)
