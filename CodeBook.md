@@ -18,6 +18,3 @@ In this repository is one R script titled 'run_analysis.R' which performs all th
    + Note: All file downloads are done into a temporary location and are cleaned up after execution automatically
 3. Retrieve the file titled tidydata.txt for the final resulting file of tidy data
    + Note: No external libraries are called during the script
-
-### Steps to Read the Tidy Dataset
-This dataset was written using the write.table() with option row.name = FALSE  To read the data into R use the command read.table(filename, header=TRUE)
