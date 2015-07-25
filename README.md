@@ -16,6 +16,7 @@ In this repository is one R script titled 'run_analysis.R' which performs all th
 1. Set the working directory for the final output of the tidy file
 2. Execute the script run_analysis.R
    + Note: All file downloads are done into a temporary location and are cleaned up after execution automatically
+   + Note: This script will download the latest copy of the zip file from the assignment.  If you wish to use a local file, update the sourceDataURL on line 6 to be the location of the zip file
 3. Retrieve the file titled tidydata.txt for the final resulting file of tidy data
    + Note: No external libraries are called during the script
 
